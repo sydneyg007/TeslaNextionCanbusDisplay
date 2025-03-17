@@ -19,7 +19,7 @@ while (Serial2.available() > 0)
   if ((pageNumber==0)&&(pressEvent==1)) //if component on page pressed
     {
     if (componentNumber==6) //OTA button
-      {setupOTA("FTINextionVehicleCan", "this", "Polkiu09");
+      {setupOTA("FTINextionVehicleCan", "ssid", "pw");
       Serial2.print("b5.bco=65535"); Serial2.write("\xFF\xFF\xFF");
       Serial2.print("b5.pco=63488"); Serial2.write("\xFF\xFF\xFF");
       page5();
